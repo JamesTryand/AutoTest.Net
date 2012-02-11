@@ -47,6 +47,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTest.TestRunners.MbUnit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTest.TestRunners.MbUnit.Tests.TestResource", "src\AutoTest.TestRunner\Plugins\AutoTest.TestRunners.MbUnit.Tests.TestResource\AutoTest.TestRunners.MbUnit.Tests.TestResource.csproj", "{10001BDE-02E0-40E5-98A2-3FB5DEBAFD14}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple.Testing", "Simple.Testing", "{FBE428F2-59EE-4BAB-95EC-E7A04F785605}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FA310EBC-B73C-41E3-BDD4-1B90A7ED62C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTest.TestRunners.SimpleTesting", "src\AutoTest.TestRunner\Plugins\AutoTest.TestRunners.SimpleTesting\AutoTest.TestRunners.SimpleTesting.csproj", "{86BBC87B-4770-43F9-BFFF-B4B136967563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTest.TestRunners.SimpleTesting.Tests.TestResource", "src\AutoTest.TestRunner\Plugins\AutoTest.TestRunners.SimpleTesting.Tests.TestResource\AutoTest.TestRunners.SimpleTesting.Tests.TestResource.csproj", "{563B4B5E-250D-47FA-AD61-58992E6178A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTest.TestRunners.SimpleTesting.Tests", "src\AutoTest.TestRunner\Plugins\AutoTest.TestRunners.SimpleTesting.Tests\AutoTest.TestRunners.SimpleTesting.Tests.csproj", "{DA74B57B-7C9F-4B7C-B744-0880993B20EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +199,36 @@ Global
 		{10001BDE-02E0-40E5-98A2-3FB5DEBAFD14}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{10001BDE-02E0-40E5-98A2-3FB5DEBAFD14}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{10001BDE-02E0-40E5-98A2-3FB5DEBAFD14}.Release|x86.ActiveCfg = Release|x86
+		{86BBC87B-4770-43F9-BFFF-B4B136967563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BBC87B-4770-43F9-BFFF-B4B136967563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BBC87B-4770-43F9-BFFF-B4B136967563}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{86BBC87B-4770-43F9-BFFF-B4B136967563}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{86BBC87B-4770-43F9-BFFF-B4B136967563}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{86BBC87B-4770-43F9-BFFF-B4B136967563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BBC87B-4770-43F9-BFFF-B4B136967563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86BBC87B-4770-43F9-BFFF-B4B136967563}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{86BBC87B-4770-43F9-BFFF-B4B136967563}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{86BBC87B-4770-43F9-BFFF-B4B136967563}.Release|x86.ActiveCfg = Release|Any CPU
+		{563B4B5E-250D-47FA-AD61-58992E6178A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{563B4B5E-250D-47FA-AD61-58992E6178A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{563B4B5E-250D-47FA-AD61-58992E6178A7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{563B4B5E-250D-47FA-AD61-58992E6178A7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{563B4B5E-250D-47FA-AD61-58992E6178A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{563B4B5E-250D-47FA-AD61-58992E6178A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{563B4B5E-250D-47FA-AD61-58992E6178A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{563B4B5E-250D-47FA-AD61-58992E6178A7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{563B4B5E-250D-47FA-AD61-58992E6178A7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{563B4B5E-250D-47FA-AD61-58992E6178A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{DA74B57B-7C9F-4B7C-B744-0880993B20EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA74B57B-7C9F-4B7C-B744-0880993B20EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA74B57B-7C9F-4B7C-B744-0880993B20EE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DA74B57B-7C9F-4B7C-B744-0880993B20EE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DA74B57B-7C9F-4B7C-B744-0880993B20EE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DA74B57B-7C9F-4B7C-B744-0880993B20EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA74B57B-7C9F-4B7C-B744-0880993B20EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA74B57B-7C9F-4B7C-B744-0880993B20EE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DA74B57B-7C9F-4B7C-B744-0880993B20EE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DA74B57B-7C9F-4B7C-B744-0880993B20EE}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -199,6 +239,7 @@ Global
 		{759586B7-0DB5-4589-B03F-3A629BA8418C} = {9584B75B-B21A-44C3-97AA-BECA427E091A}
 		{AC6F930F-CE1D-4419-A49F-4CA7AE7B74CE} = {9584B75B-B21A-44C3-97AA-BECA427E091A}
 		{D998BF73-7476-41EF-A414-3404C7EA9EEA} = {9584B75B-B21A-44C3-97AA-BECA427E091A}
+		{FBE428F2-59EE-4BAB-95EC-E7A04F785605} = {9584B75B-B21A-44C3-97AA-BECA427E091A}
 		{75395DC3-E808-448E-A1F1-6C62D7FF7E80} = {D8676CE8-51F3-444D-B356-FD3FE7BE33C6}
 		{C8D15BC2-50DA-48CD-9B7B-48CFB7FF36F5} = {D8676CE8-51F3-444D-B356-FD3FE7BE33C6}
 		{50C99985-64CF-4E34-98A6-AD3CB3527A42} = {75395DC3-E808-448E-A1F1-6C62D7FF7E80}
@@ -213,6 +254,10 @@ Global
 		{EE41D60E-ED22-43F6-B746-630EA6E6FE85} = {D998BF73-7476-41EF-A414-3404C7EA9EEA}
 		{4445CC5F-8C41-43F6-B000-39C9114E0CB3} = {DE8B7DD5-6539-4B91-88AD-8392F38AE8AA}
 		{10001BDE-02E0-40E5-98A2-3FB5DEBAFD14} = {DE8B7DD5-6539-4B91-88AD-8392F38AE8AA}
+		{FA310EBC-B73C-41E3-BDD4-1B90A7ED62C6} = {FBE428F2-59EE-4BAB-95EC-E7A04F785605}
+		{86BBC87B-4770-43F9-BFFF-B4B136967563} = {FBE428F2-59EE-4BAB-95EC-E7A04F785605}
+		{563B4B5E-250D-47FA-AD61-58992E6178A7} = {FA310EBC-B73C-41E3-BDD4-1B90A7ED62C6}
+		{DA74B57B-7C9F-4B7C-B744-0880993B20EE} = {FA310EBC-B73C-41E3-BDD4-1B90A7ED62C6}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = src\AutoTest.WinForms\AutoTest.WinForms.csproj
