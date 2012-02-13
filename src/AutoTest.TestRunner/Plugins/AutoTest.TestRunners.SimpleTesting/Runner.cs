@@ -48,27 +48,43 @@ namespace AutoTest.TestRunners.SimpleTesting
 
 		public bool IsTest(string assembly, string member)
 		{
-			throw new NotImplementedException();
+			using (var locator = _reflectionProviderFactory(assembly))
+			{
+				var method = locator.LocateMethod(member);
+				if (method == null)
+					return false;
+				return method.Attributes.Contains("Xunit.FactAttribute") &&
+					!method.IsAbstract;
+			}
 		}
 
 		public bool ContainsTestsFor(string assembly, string member)
 		{
-			throw new NotImplementedException();
+			using (var locator = _reflectionProviderFactory(assembly))
+			{
+				var cls = locator.LocateClass(member);
+				if (cls == null)
+					return false;
+				return !cls.IsAbstract && cls.Attributes.Contains("Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute");
+			}
 		}
 
 		public bool ContainsTestsFor(string assembly)
 		{
-			throw new NotImplementedException();
+			using (var parser = _reflectionProviderFactory(assembly))
+			{
+				return parser.GetReferences().Count(x => x.Name.Equals("Microsoft.VisualStudio.QualityTools.UnitTestFramework")) > 0;
+			}
 		}
 
 		public bool Handles(string identifier)
 		{
-			throw new NotImplementedException();
+			return Identifier.ToLower().Equals(identifier.ToLower());
 		}
 
 		public IEnumerable<Shared.Results.TestResult> Run(Shared.Options.RunSettings settings)
 		{
-			throw new NotImplementedException();
+			return new SimpleTestingRunner(_logger, _reflectionProviderFactory, _channel).Run(settings);
 		}
 
 		#endregion
