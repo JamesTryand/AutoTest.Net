@@ -84,7 +84,7 @@ namespace AutoTest.TestRunners.SimpleTesting
 
 		public IEnumerable<Shared.Results.TestResult> Run(Shared.Options.RunSettings settings)
 		{
-			return new SimpleTestingRunner(_logger, _reflectionProviderFactory, _channel).Run(settings);
+			return new SimpleTestingRunner(_internalLogger, _reflectionProviderFactory, _channel).Run(settings);
 		}
 
 		#endregion
